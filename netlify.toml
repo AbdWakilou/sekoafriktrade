@@ -1,9 +1,11 @@
-# netlify.toml — à fusionner avec ton fichier existant si tu en as déjà un
-# (celui qui gère déjà la fonction PayDunya). Ne remplace pas un netlify.toml
-# existant : vérifie juste que la section [functions] pointe vers ce même dossier.
-
 [build]
   functions = "netlify/functions"
+  publish = "."
 
 [functions]
   node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/"
+  to = "/afrimarket-landing-final.html"
+  status = 200
