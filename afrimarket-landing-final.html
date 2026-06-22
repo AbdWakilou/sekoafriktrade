@@ -1139,8 +1139,8 @@ src="https://www.facebook.com/tr?id=1149591104000222&ev=PageView&noscript=1"
     if (ga4RefreshTimer) { clearTimeout(ga4RefreshTimer); ga4RefreshTimer = null; }
 
     if (target === 'accueil') {
-      document.getElementById('bn-accueil').classList.add('active');
-    } if (isAdminAuthed) {
+      document.getElementById('bn-accueil').classList.add('active');} 
+       if (isAdminAuthed) {
   document.getElementById('screen-dashboard').classList.add('open');
   document.getElementById('bn-dashboard').classList.add('active');
   try { renderCharts(); } catch (e) { console.error('renderCharts a échoué :', e); }
